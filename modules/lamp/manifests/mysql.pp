@@ -5,7 +5,7 @@ define lamp::mysql (
   $database = $name,
 ) {
 
-  class { '::mysql::server':
+  class { 'mysql::server':
     override_options => {
       'mysqld' => { 'bind-address' => '0.0.0.0' }
     },

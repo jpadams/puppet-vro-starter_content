@@ -40,7 +40,7 @@ define lamp::webapp (
     }
     ?>
     | EOT
-  
+
   file { "${docroot}/index.php":
     ensure  => file,
     content => $indexphp,
