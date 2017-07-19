@@ -11,7 +11,7 @@ forge "https://forgeapi.puppetlabs.com"
 
 # Forge Modules from Puppet
 
-mod 'puppetlabs-apache', '1.10.0'
+mod 'puppetlabs-apache', '1.10.1'
 mod 'puppetlabs-chocolatey', '2.0.0'
 mod 'puppetlabs-mysql', '3.10.0'
 mod 'puppetlabs-stdlib', '4.12.0'
