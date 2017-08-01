@@ -1,6 +1,6 @@
 class profile::lamp::webapp {
 
-  $requestid     = $facts['puppet_vra_properties']['__Cafe.Root.Request.Id']
+  $requestid     = $facts['puppet_vra_properties']['RequestId']
   $query         = "resources { type = 'Lamp::Mysql' and title = \"${requestid}\" }"
   $db_connection = puppetdb_query($query)
 

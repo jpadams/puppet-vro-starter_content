@@ -5,7 +5,7 @@ class profile::lamp::mysql (
   $database    = 'test'
   ) {
 
-  $requestid = $facts['puppet_vra_properties']['__Cafe.Root.Request.Id']
+  $requestid = $facts['puppet_vra_properties']['RequestId']
 
   lamp::mysql { $requestid:
     db_user     => $db_user,
